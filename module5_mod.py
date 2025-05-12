@@ -1,10 +1,11 @@
 class NumberProcessor:
   def_init_(self):
   self.numbers = []
-def add_number(self, number):
-  self.numbers.append(number)
-def find_number(self,x):
-  try: index = self.numbers.index(x) + 1
-    return index
-except ValueError:
-   return -1
+def insert_number(self, count):
+  for _ in range (count):
+    number = int(input("Enter a number: "))
+    self.numbers.append(number)
+def find_index(self,x):
+  if x in self.numbers:
+    return self.numbers.index(x) + 1 #1-based index
+    return -1
